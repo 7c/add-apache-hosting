@@ -22,7 +22,7 @@ dir="$hostingfolder/$project"
 html="$dir/html"
 test -e "$dir" || mkdir -p "$dir"
 test -e "$html" || mkdir -p "$html"
-echo "$project is ready" >> "$html/index.php"
+# echo "$project is ready" >> "$html/index.php"
 
 
 tee "/etc/apache2/sites-enabled/$project.conf" <<EOF
