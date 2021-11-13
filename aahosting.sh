@@ -1,6 +1,5 @@
 #!/bin/bash
-
-hostingfolder='/opt'
+hostingfolder='/web'
 project="$1"
 
 test -z $project && {
