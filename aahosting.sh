@@ -29,9 +29,9 @@ tee "/etc/apache2/sites-enabled/$project.conf" <<EOF
 <VirtualHost *:80>
         ServerName $project
         HostNameLookups Off
-        DocumentRoot /opt/$project/html
-        Errorlog ${APACHE_LOG_DIR}/$project.error.log
-        CustomLog ${APACHE_LOG_DIR}/$project.access.log combined
+        DocumentRoot $html
+        Errorlog \${APACHE_LOG_DIR}/$project.error.log
+        CustomLog \${APACHE_LOG_DIR}/$project.access.log combined
 </VirtualHost>
 EOF
 
